@@ -1,0 +1,225 @@
+# =========================================================
+# PYTHON
+# =========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================================================
+# VIRTUAL ENVIRONMENTS
+# =========================================================
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# pyenv
+.python-version
+
+# =========================================================
+# JUPYTER
+# =========================================================
+.ipynb_checkpoints
+
+# Jupyter runtime
+.jupyter/
+
+# =========================================================
+# TESTING / COVERAGE
+# =========================================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# =========================================================
+# TYPE CHECKERS / LINTERS
+# =========================================================
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+
+# =========================================================
+# LOGS
+# =========================================================
+*.log
+logs/
+log/
+
+# =========================================================
+# ENVIRONMENT VARIABLES / SECRETS
+# =========================================================
+.env
+.env.*
+*.env
+
+# Ignore secrets
+secrets.json
+credentials.json
+service_account.json
+
+# =========================================================
+# IDE / EDITOR FILES
+# =========================================================
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# =========================================================
+# OS FILES
+# =========================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================================
+# DATASETS & LARGE FILES
+# =========================================================
+
+# Common dataset folders
+data/
+datasets/
+dataset/
+
+# Raw / processed data
+raw/
+processed/
+
+# CSV / parquet / HDF5
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.feather
+
+# NumPy / tensors
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+
+# Images / archives (optional)
+*.zip
+*.tar
+*.gz
+*.7z
+
+# =========================================================
+# MACHINE LEARNING MODELS
+# =========================================================
+models/
+checkpoints/
+weights/
+saved_models/
+runs/
+
+# TensorBoard
+tensorboard/
+events.out.tfevents.*
+
+# MLflow
+mlruns/
+
+# Weights & Biases
+wandb/
+
+# DVC
+.dvc/
+
+# Ray Tune
+ray_results/
+
+# Hugging Face
+.cache/huggingface/
+hf_cache/
+
+# =========================================================
+# FRAMEWORK SPECIFIC
+# =========================================================
+
+# PyTorch Lightning
+lightning_logs/
+
+# Keras
+*.keras
+
+# Streamlit
+.streamlit/secrets.toml
+
+# =========================================================
+# BUILD / CACHE
+# =========================================================
+*.sqlite3
+*.db
+
+tmp/
+temp/
+.cache/
+
+# =========================================================
+# DOCKER
+# =========================================================
+docker-compose.override.yml
+
+# =========================================================
+# NOTEBOOK OUTPUTS (OPTIONAL)
+# =========================================================
+# Uncomment if you don't want notebook outputs
+# *.ipynb
+
+# =========================================================
+# MISC
+# =========================================================
+*.bak
+*.tmp
+*.temp

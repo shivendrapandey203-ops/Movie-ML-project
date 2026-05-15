@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieRecommender AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>🎬 MovieRecommender AI</h1>
+                <p>Machine Learning Powered Recommendations</p>
+            </div>
+            <div class="header-actions">
+                <div class="mode-toggle" id="modeToggle">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search movies or type a movie title..." />
+                <button id="searchBtn" class="btn-primary">🔍 Search</button>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <h3>Quick Recommendations</h3>
+            
+            <!-- Mood Buttons -->
+            <div class="mood-buttons">
+                <button class="mood-btn happy" data-mood="happy">😊 Happy</button>
+                <button class="mood-btn sad" data-mood="sad">😢 Sad</button>
+                <button class="mood-btn romantic" data-mood="romantic">💕 Romantic</button>
+                <button class="mood-btn thrilling" data-mood="thrilling">⚡ Thrilling</button>
+                <button class="mood-btn excited" data-mood="excited">🚀 Excited</button>
+                <button class="mood-btn chill" data-mood="chill">😌 Chill</button>
+            </div>
+
+            <!-- Genre Buttons -->
+            <div class="genre-buttons">
+                <button class="genre-btn" data-genre="Action">⚔️ Action</button>
+                <button class="genre-btn" data-genre="Drama">🎭 Drama</button>
+                <button class="genre-btn" data-genre="Comedy">😂 Comedy</button>
+                <button class="genre-btn" data-genre="Thriller">🔥 Thriller</button>
+                <button class="genre-btn" data-genre="Sci-Fi">🚀 Sci-Fi</button>
+                <button class="genre-btn" data-genre="Romance">💖 Romance</button>
+            </div>
+
+            <button id="randomBtn" class="btn-surprise">🎲 Surprise Me!</button>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" id="resultsSection">
+            <div class="results-header">
+                <h2 id="resultsTitle">Discover Amazing Movies</h2>
+                <div class="loading" id="loadingSpinner" style="display: none;">
+                    <div class="spinner"></div>
+                    <span>Loading recommendations...</span>
+                </div>
+            </div>
+            <div class="movies-grid" id="moviesGrid"></div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>No movies found. Try another search!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
