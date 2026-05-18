@@ -1,6 +1,10 @@
 class MovieRecommenderApp {
     constructor() {
-        this.apiBase = 'http://localhost:5000';
+      this.apiBase =
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost"
+        ? "http://localhost:5000"
+        : "https://movie-ml-project-3.onrender.com";
         this.currentMode = 'light';
         this.init();
     }
