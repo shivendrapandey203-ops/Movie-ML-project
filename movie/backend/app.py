@@ -6,7 +6,13 @@ from model import MovieRecommender
 import os
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for frontend
+CORS(app)
+
+@app.route('/')
+def home():
+    return jsonify({
+        'message': 'Movie Recommender AI API is Live 🚀'
+    })
 
 # Load model
 recommender = MovieRecommender()
